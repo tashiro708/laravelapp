@@ -11,10 +11,11 @@
 |
 */
 
+Route::get('hello','HelloController@index');
 
-Route::get('hello', function () { 
-    return view('hello.index');
-});
+// Route::get('hello', function () { p62ルートの設定でテンプレートを表示する
+//     return view('hello.index');
+// });
 
 // Route::get('hello', 'HelloController@index') ;p52 request response
 

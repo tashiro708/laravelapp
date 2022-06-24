@@ -7,7 +7,11 @@ use Illuminate\Http\Response;
 
 class HelloController extends Controller
 {
-    // public function index(Request $request, Response $response) {
+
+    public function index() {
+        return view ('hello.index');
+    }
+    // public function index(Request $request, Response $response) {...p62までの記述
     //     $html = <<<EOF
     //     <html>
     //     <head>
