@@ -11,16 +11,19 @@
 |
 */
 
-Route::get('hello', 'HelloController@index') ;
-// Route::get('hello', 'HelloController@response') ;
 
-// Route::get('hello/other', 'HelloController@other') ;
+Route::get('hello', function () { 
+    return view('hello.index');
+});
 
-// Route::get('/', function () {
+// Route::get('hello', 'HelloController@index') ;p52 request response
+
+// Route::get('hello/other', 'HelloController@other') ;p46 複数のアクションメゾット
+
+// Route::get('hello/{id?}/{pass?}', 'HelloController@index') ;p44 ルートパラメーターの利用
+
+// Route::get('/', function () { 
 //     return view('welcome');
 // });
 
-// Route::get('hello', 'HelloController@index') ;
-
-// Route::get('hello/{id?}/{pass?}', 'HelloController@index') ;p44 ルートパラメーターの利用
 
