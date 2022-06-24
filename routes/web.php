@@ -11,12 +11,15 @@
 |
 */
 
+Route::get('hello', 'HelloController@index') ;
+
+Route::get('hello/other', 'HelloController@other') ;
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
 // Route::get('hello', 'HelloController@index') ;
 
-Route::get('hello/{id?}/{pass?}', 'HelloController@index') ;
+// Route::get('hello/{id?}/{pass?}', 'HelloController@index') ;p44 ルートパラメーターの利用
 
-// Route::get('hello/other', 'HelloController@other') ;
