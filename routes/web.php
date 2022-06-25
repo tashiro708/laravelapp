@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('hello/{id?}','HelloController@index');
+Route::get('hello','HelloController@index');
 
 // Route::get('hello', function () { p62ルートの設定でテンプレートを表示する
 //     return view('hello.index');
