@@ -24,8 +24,8 @@ Route::post('hello','HelloController@post');
 
 // Route::get('hello/{id?}/{pass?}', 'HelloController@index') ;p44 ルートパラメーターの利用
 
-// Route::get('/', function () { 
-//     return view('welcome');
-// });
+Route::get('/', function () { 
+    return view('welcome');
+});
 
 
