@@ -10,6 +10,7 @@ h1 { font-size:120pt; text-align:right; color:#fafafa; margin:-50px 0px -100px 0
 <h1>Request</h1>
 <p>This is a sample page with php-template.</p>
 <p><?php echo $msg; ?></p>
+<p>ID=<?php echo $id; ?></p>
 <p><?php echo date("Y年n月j日");?></p>
 </body>
 </html>
