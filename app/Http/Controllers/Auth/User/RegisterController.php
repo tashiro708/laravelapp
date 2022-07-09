@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth\User;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -40,6 +40,14 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
+
+
+    public function showRegistrationForm()
+    {
+        return view('user.auth.register');
+    }
+
+
 
     /**
      * Get a validator for an incoming registration request.
